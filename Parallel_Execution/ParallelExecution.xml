@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true" thread-count="2">
+
+	<test name="Test1">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="baseurl"
+			value="https://unifyrqa.performancematters.com/landing.jsp" />
+		<classes>
+			<class name="com.testCase.crossBrowser" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="baseurl"
+			value="https://unifyrqa.performancematters.com/landing.jsp" />
+		<classes>
+			<class name="com.testCase.crossBrowser"  />
+		</classes>
+	</test>
+
+
+	<test name="Test3">
+		<parameter name="browser" value="IE" />
+		<parameter name="baseurl"
+			value="https://unifyrqa.performancematters.com/landing.jsp" />
+		<classes>
+			<class name="com.testCase.crossBrowser"  />
+		</classes>
+	</test>
+
+</suite> 

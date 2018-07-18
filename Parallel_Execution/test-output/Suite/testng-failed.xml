@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test3(failed)" parallel="methods">
+    <parameter name="baseurl" value="https://unifyrqa.performancematters.com/landing.jsp"/>
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.testCase.crossBrowser">
+        <methods>
+          <include name="configuration"/>
+          <include name="user_Loging"/>
+        </methods>
+      </class> <!-- com.testCase.crossBrowser -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
